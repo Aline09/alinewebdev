@@ -42,6 +42,7 @@
   <meta name="description" content="Aline Oliveira é desenvolvedora web. Trabalha com HTML5, CSS3 e JS no front-end e PHP e MySQL no back-end. ">
   <meta name="keywords" content="programador, criação de sites, desenvolvimento web, front-end, back-end, contratar programador, fazer site">
   <title>Aline Oliveira | Desenvolvimento Web</title>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body>
@@ -222,7 +223,7 @@
   <section id="contato" class="section section-bg scrollspy padding-bottom-lg">
     <div class="container">
       <h2 class="center text-color h2-helper">Vamos conversar?</h2>
-      <form class="col s12" action="/mensagem-enviada.html" method="POST" netlify>
+      <form class="col s12" action="/mensagem-enviada.html" method="POST" netlify-recaptcha netlify>
         <div class="row">
           <div class="input-field col s6">
             <i class="material-icons prefix text-color">account_circle</i>
@@ -242,7 +243,7 @@
             <label for="icon_prefix2">Mensagem</label>
           </div>
           <div class="input-field col s12">
-            <div netlify-recaptcha></div>
+            <div class="g-recaptcha" data-sitekey="6LcNjnoUAAAAADGnFwcdyVf0cpxKdkDKh6yePoh9"></div>
           </div>
         </div>
         <button class="btn waves-effect grey waves-dark text-color z-depth-4" type="submit" name="action">Enviar
