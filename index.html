@@ -73,7 +73,7 @@
 
   <!--Parallax 1 -->
   <div class="parallax-container">
-    <div class="parallax"><img src="img/creative.jpg"></div>
+    <div class="parallax"><img data-src="img/creative.jpg"></div>
   </div>
 
   <!--Seção: Portifolio-->
@@ -86,7 +86,7 @@
       <div class="col s12 m4">
         <div class="card">
           <div class="card-image">
-              <img data-src="img/shareposts.png">
+            <img data-src="img/shareposts.png">
           </div>
           <div class="card-content">
             <p class="text-color-2">Shareposts: Aplicação feita com PHP e MySQL.
@@ -115,10 +115,10 @@
       <div class="col s12 m4">
         <div class="card">
           <div class="card-image">
-              <img data-src="img/optimus.png">
+              <img data-src="/img/optimus.png">
             </div>
           <div class="card-content">
-            <p class="text-color-2">Optimus: Site desenvolvido com Materialize CSS.</p>
+            <p class="text-color-2">Optimus: Site desenvolvido com Materialize CSS</p>
           </div>
           <div class="card-action">
             <a href="https://github.com/Aline09/optimus" class="text-color-2" target="_blank"><i class="fab fa-github text-color-2"></i> GitHub</a>
@@ -135,7 +135,7 @@
 
   <!--Parallax 2 -->
   <div class="parallax-container">
-    <div class="parallax"> <img data-src="img/parallax.jpg">
+    <div class="parallax"> <img data-src="/img/parallax.jpg">
     </div>
   </div>
   </div>
@@ -180,7 +180,7 @@
 
   <!--Parallax 3-->
   <div class="parallax-container">
-     <div class="parallax"> <img data-src="img/project.jpg">
+     <div class="parallax"> <img data-src="/img/project.jpg">
     </div>
   </div>
 
@@ -220,8 +220,7 @@
 
   <!--Parallax 4-->
   <div class="parallax-container">
-     <div class="parallax"> 
-       <img data-src="img/people.jpg">
+     <div class="parallax"> <img data-src="/img/people.jpg">
     </div>
   </div>
 
@@ -229,7 +228,7 @@
   <section id="contato" class="section section-bg scrollspy padding-bottom-lg">
     <div class="container">
       <h2 class="center text-color h2-helper">Vamos conversar?</h2>
-      <form class="col s12" name="form" action="/mensagem-enviada.html" method="POST" netlify-recaptcha netlify>
+      <form class="col s12" action="/mensagem-enviada.html" method="POST" netlify-recaptcha netlify >
         <div class="row">
           <div class="input-field col s6">
             <i class="material-icons prefix text-color">account_circle</i>
@@ -305,13 +304,12 @@
 
   </script>
   <script>
-    [].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
+  [].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
 	img.setAttribute('src', img.getAttribute('data-src'));
 	img.onload = function() {
 		img.removeAttribute('data-src');
 	};
-});
-  </script>
+});</script>
 </body>
 
 </html>
